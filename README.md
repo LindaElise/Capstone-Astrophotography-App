@@ -13,6 +13,15 @@ The Astrophotography Webb Application will allow you to display NASA's imagery w
   - User can look into their favorite astropictures in their account. Add or remove photos if desired.
 * Logout
   - Log out from your account.
+<img width="542" alt="image" src="https://github.com/LindaElise/Capstone-Astrophotography-App/assets/152917962/6bdf1178-9994-46ca-b54a-8ef4cd60f607">
+<br>
+
+### How to start the web application
+1. Go to code and download ZIP files to your computer.
+2. Go to "Backend files" folder.
+3. Open "Download Packages" .bat file. This will download the necesary packages to run the application.
+4. Open "Start The Server" .bat file. This will promt you to the terminal.
+5. Server will run at **http://localhost:3000/**.
 ### API Information
 APOD is the most popular websites at NASA is the Astronomy Picture of the Day. It has query parameters such as:
 * date

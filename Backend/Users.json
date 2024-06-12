@@ -1,0 +1,17 @@
+[
+  {
+    "email": "eliseest1900@gmail.com",
+    "password": "Linda",
+    "token": "ZWxpc2Vlc3QxOTAwQGdtYWlsLmNvbTI1ODYhREJwYXNzREIhNjg1MkxpbmRh",
+    "Favourites": [
+      {
+        "date": "2024-06-05T04:00:00.000Z",
+        "image": "https://apod.nasa.gov/apod/image/2406/NeretvaVallis_PerseveranceNevT_4000.jpg"
+      },
+      {
+        "date": "2024-05-31T04:00:00.000Z",
+        "image": "https://apod.nasa.gov/apod/image/2405/NebulousRealmofWR134_2048.png"
+      }
+    ]
+  }
+]

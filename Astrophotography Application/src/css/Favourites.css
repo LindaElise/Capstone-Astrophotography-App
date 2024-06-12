@@ -1,0 +1,44 @@
+.FavouritesH1 {
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.FavouritesDiv1 {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.FavouritesDiv2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.FavouritesDivs {
+    text-decoration: none;
+    border: 1px solid black;
+    margin-bottom: 2%;
+}
+
+.FavouritesDivs img {
+    width: 200px;
+    height: 200px;
+}
+
+.FavouriteDivDate {
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}

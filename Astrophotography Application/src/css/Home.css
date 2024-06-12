@@ -1,0 +1,45 @@
+.dailyPhotoUpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.dailyPhotoUpper h1 {
+    color: black;
+    margin: 0;
+}
+
+.dailyPhotoOpenCalendar {
+    margin-left:2%;
+    cursor: pointer;
+}
+
+.dailyPhotoOpenCalendar button, .dailyPhotoOpenFavourites a, .dailyPhotoAddFavouriteRemove button {
+    color: white;
+    font-weight: 600;
+    background-color: #282A35;
+    border: 0;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.dailyPhotoOpenFavourites {
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.dailyPhotoAddFavouriteRemove button {
+    margin-bottom: 20px;
+}
+
+.CalendarDivB {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}

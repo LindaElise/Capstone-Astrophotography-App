@@ -1,0 +1,22 @@
+{
+  "name": "api-nasa-backend",
+  "version": "1.0.0",
+  "description": "api Nasa Backend.",
+  "main": "\"index.js\"",
+  "scripts": {
+    "start": "node \"index.js\""
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [],
+  "author": "as2844706",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security"
+  }
+}

@@ -108,5 +108,5 @@ setInterval(async() => {
 }, 60000);
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:3000`);
+  console.log(`Server running at http://localhost:5000`);
 });

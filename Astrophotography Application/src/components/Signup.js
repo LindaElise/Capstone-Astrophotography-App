@@ -8,10 +8,10 @@ const Signup = ({ onSignup }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
+  const url = "https://capstone-astrophotography-app.onrender.com";
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:5000/api/signup', { email, password })
+    axios.post('${url}/api/signup', { email, password })
       .then(response => {
         onSignup(response.data.token);
         navigate('/');

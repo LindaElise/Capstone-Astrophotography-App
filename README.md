@@ -1,6 +1,7 @@
 # Capstone Project
 **Project Name:** Astrophotography Web Application
 <br>
+**Deployment Link:** [Astrophotography Web App](https://capstone-astrophotography-app-1.onrender.com).
 **API:** [NASA Open API](https://api.nasa.gov/).
 ### Description
 The Astrophotography Webb Application will allow you to display NASA's imagery with over 140,000 astro pictures using the Astrophotography Picture of the Day (APOS) API. Users can create and account to add or removed their favority pictures and navigate throughout the calendar to display previous photos. Explore the wonders of the out space 🌠.
@@ -21,7 +22,9 @@ The Astrophotography Webb Application will allow you to display NASA's imagery w
 2. Go to "Backend files" folder.
 3. Open "Download Packages" .bat file. This will download the necesary packages to run the application.
 4. Open "Start The Server" .bat file. This will promt you to the terminal.
-5. Server will run at **http://localhost:3000/**.
+5. Go back to main folder and open "Astrophotography Application" folder.
+6. Run **npm install** for node modules.
+7. Run **npm start** for starting your server. Application will run in **http://localhost:3000/**.
 ### API Information
 APOD is the most popular websites at NASA is the Astronomy Picture of the Day. It has query parameters such as:
 * date

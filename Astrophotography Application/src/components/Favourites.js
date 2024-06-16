@@ -8,7 +8,7 @@ import { useNavigate, Link } from 'react-router-dom';
 const Favourites = ({ isAuthenticated }) => {
   const [favourites, setFavourites] = useState([]);
   const navigate = useNavigate();
-
+  const url = "https://capstone-astrophotography-app.onrender.com";
     if (!isAuthenticated) {
       navigate('/login');
     }
@@ -17,7 +17,7 @@ const Favourites = ({ isAuthenticated }) => {
     const fetchFavourites = async () => {
       try {
         var token = localStorage.getItem('token');
-        axios.post('http://localhost:5000/api/seeFavourites', { token })
+        axios.post('${url}/api/seeFavourites', { token })
         .then(response => {
             if (response.data.success) {
                 if (response.data.images) {

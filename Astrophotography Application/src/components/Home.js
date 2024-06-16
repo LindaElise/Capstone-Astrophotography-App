@@ -14,7 +14,7 @@ const Home = ({ isAuthenticated }) => {
   const [showCalendar, setShowCalendar] = useState(false);
   const [isLoadedImg, setIsLoadedImg] = useState(false);
   const [isFavouritedImg, setIsFavouritedImg] = useState(false);
-
+  const url = "https://capstone-astrophotography-app.onrender.com";
   const navigate = useNavigate();
 
   const location = useLocation();
@@ -22,13 +22,13 @@ const Home = ({ isAuthenticated }) => {
   useEffect(() => {
     const fetchImage = async (selectedDate) => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/image?date=${selectedDate}`);
+        const response = await axios.get(`${url}/api/image?date=${selectedDate}`);
         document.querySelectorAll(`.dailyPhotoNasaExplanation`)[0].innerHTML = response.data.description;
         document.querySelectorAll(`.dailyPhotoNasaExplanation`)[0].style["margin-bottom"] = "20px";
         var token = localStorage.getItem('token');
         setImage(response.data.imageUrl);
         setIsLoadedImg(true);
-        axios.post('http://localhost:5000/api/checkFavourite', { token, date: selectedDate })
+        axios.post('${url}/api/checkFavourite', { token, date: selectedDate })
       .then(response => {
         if (response.data.success) {
           if (response.data.data) {

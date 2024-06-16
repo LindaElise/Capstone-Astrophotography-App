@@ -69,14 +69,14 @@ const Home = ({ isAuthenticated }) => {
     const formattedDate = newDate.toISOString().split('T')[0];
     window.history.pushState({}, '', `?date=${formattedDate}`);
 
-    axios.get(`http://localhost:5000/api/image?date=${formattedDate}`)
+    axios.get(`${url}/api/image?date=${formattedDate}`)
       .then(response => {
         document.querySelectorAll(`.dailyPhotoNasaExplanation`)[0].innerHTML = response.data.description;
         setImage(response.data.imageUrl);
         setIsLoadedImg(true);
 
         var token = localStorage.getItem('token');
-        axios.post('http://localhost:5000/api/checkFavourite', { token, date: formattedDate })
+        axios.post('${url}/api/checkFavourite', { token, date: formattedDate })
         .then(response2 => {
           if (response2.data.success) {
             if (response2.data.data) {
@@ -127,7 +127,7 @@ const Home = ({ isAuthenticated }) => {
       navigate('/login');
     } else {
       const token = localStorage.getItem('token');
-      axios.post('http://localhost:5000/api/setFavourite', { token, situation: isFavouritedImg ? `remove` : `add`, date, image })
+      axios.post('${url}/api/setFavourite', { token, situation: isFavouritedImg ? `remove` : `add`, date, image })
       .then(response => {
         if (response.data.success) {
           if (isFavouritedImg) {

@@ -11,7 +11,7 @@ const Login = ({ onLogin }) => {
   const url = "https://capstone-astrophotography-app.onrender.com";
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('${url}/api/login', { email, password })
+    axios.post(`${url}/api/login`, { email, password })
       .then(response => {
         onLogin(response.data.token);
         navigate('/');

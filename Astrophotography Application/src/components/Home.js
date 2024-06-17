@@ -33,23 +33,23 @@ const Home = ({ isAuthenticated }) => {
         if (response.data.success) {
           if (response.data.data) {
             setIsFavouritedImg(true);
-            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Remove From Favourites`;
+            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Remove From Favorites`;
           }
           else {
             setIsFavouritedImg(false);
-            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
           }
         }
         else {
           console.log(response.data);
           setIsFavouritedImg(false);
-          document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+          document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
         }
       })
       .catch(error => {
         console.error('Error:', error);
         setIsFavouritedImg(false);
-        document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+        document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
       });
       } catch (error) {
         console.error('Error fetching image:', error);
@@ -81,23 +81,23 @@ const Home = ({ isAuthenticated }) => {
           if (response2.data.success) {
             if (response2.data.data) {
               setIsFavouritedImg(true);
-              document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Remove From Favourites`;
+              document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Remove From Favorites`;
             }
             else {
               setIsFavouritedImg(false);
-              document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+              document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
             }
           }
           else {
             console.log(response2.data);
             setIsFavouritedImg(false);
-            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
           }
         })
         .catch(error2 => {
           console.error('Error:', error2);
           setIsFavouritedImg(false);
-          document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+          document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
         });
 
       })
@@ -132,11 +132,11 @@ const Home = ({ isAuthenticated }) => {
         if (response.data.success) {
           if (isFavouritedImg) {
             setIsFavouritedImg(false);
-            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favourites`;
+            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Add To Favorites`;
           }
           else {
             setIsFavouritedImg(true);
-            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Remove From Favourites`;
+            document.querySelectorAll(`.dailyPhotoAddFavouriteRemove button`)[0].innerHTML = `Remove From Favorites`;
           }
         }
         else {

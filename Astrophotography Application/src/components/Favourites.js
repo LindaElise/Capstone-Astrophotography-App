@@ -17,7 +17,7 @@ const Favourites = ({ isAuthenticated }) => {
     const fetchFavourites = async () => {
       try {
         var token = localStorage.getItem('token');
-        axios.post('${url}/api/seeFavourites', { token })
+        axios.post(`${url}/api/seeFavourites`, { token })
         .then(response => {
             if (response.data.success) {
                 if (response.data.images) {

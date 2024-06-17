@@ -28,7 +28,7 @@ const Home = ({ isAuthenticated }) => {
         var token = localStorage.getItem('token');
         setImage(response.data.imageUrl);
         setIsLoadedImg(true);
-        axios.post('${url}/api/checkFavourite', { token, date: selectedDate })
+        axios.post(`${url}/api/checkFavourite`, { token, date: selectedDate })
       .then(response => {
         if (response.data.success) {
           if (response.data.data) {
@@ -76,7 +76,7 @@ const Home = ({ isAuthenticated }) => {
         setIsLoadedImg(true);
 
         var token = localStorage.getItem('token');
-        axios.post('${url}/api/checkFavourite', { token, date: formattedDate })
+        axios.post(`${url}/api/checkFavourite`, { token, date: formattedDate })
         .then(response2 => {
           if (response2.data.success) {
             if (response2.data.data) {
@@ -127,7 +127,7 @@ const Home = ({ isAuthenticated }) => {
       navigate('/login');
     } else {
       const token = localStorage.getItem('token');
-      axios.post('${url}/api/setFavourite', { token, situation: isFavouritedImg ? `remove` : `add`, date, image })
+      axios.post(`${url}/api/setFavourite`, { token, situation: isFavouritedImg ? `remove` : `add`, date, image })
       .then(response => {
         if (response.data.success) {
           if (isFavouritedImg) {
